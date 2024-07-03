@@ -1,0 +1,24 @@
+{
+  "name": "greatfrondend-profile-card",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "nuxt": "^3.12.3",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.18.1",
+    "gh-pages": "^6.1.1",
+    "sass": "^1.77.6"
+  },
+  "homepage": "https://if540.github.io/greatfrondend-profile-card"
+}
