@@ -13,7 +13,8 @@ useSeoMeta({
     4. Contacts -->
     <!-- <HtmlPixelPerfect01 /> -->
     <!-- <HtmlPixelPerfect02 /> -->
-    <HtmlPixelPerfect03 />
+    <!-- <HtmlPixelPerfect03 /> -->
+    <HtmlPixelPerfect04 />
   </div>
 </template>
 
