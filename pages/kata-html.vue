@@ -12,7 +12,8 @@ useSeoMeta({
     3. Products
     4. Contacts -->
     <!-- <HtmlPixelPerfect01 /> -->
-    <HtmlPixelPerfect02 />
+    <!-- <HtmlPixelPerfect02 /> -->
+    <HtmlPixelPerfect03 />
   </div>
 </template>
 
