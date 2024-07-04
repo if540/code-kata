@@ -6,7 +6,13 @@ useSeoMeta({
 
 <template>
   <div>
-    <HtmlPixelPerfect />
+    <!-- ul.nav>li.nav-item$*>a|t -->
+    <!-- 1. About
+    2. News
+    3. Products
+    4. Contacts -->
+    <!-- <HtmlPixelPerfect01 /> -->
+    <HtmlPixelPerfect02 />
   </div>
 </template>
 
