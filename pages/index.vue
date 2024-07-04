@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Profile Card"
+  title: "Index Page"
 })
 </script>
 
 <template>
   <div>
-    <profileCard />
+    Page: Index
   </div>
 </template>
 

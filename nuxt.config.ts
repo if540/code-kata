@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-07-03",
 
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/greatfrondend-profile-card/' : '/',
+    baseURL: process.env.NODE_ENV === 'production' ? '/code-kata/' : '/',
     buildAssetsDir: '/static/',
     rootAttrs: {
       id: "app"

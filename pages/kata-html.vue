@@ -1,12 +1,12 @@
 <script setup lang="ts">
-useHead({
-  titleTemplate: 'Code Kata - %s',
+useSeoMeta({
+  title: "Kata Html"
 })
 </script>
 
 <template>
   <div>
-    <slot />
+    <HtmlPixelPerfect />
   </div>
 </template>
 
