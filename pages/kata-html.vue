@@ -18,7 +18,8 @@ useSeoMeta({
     <!-- <HtmlPixelPerfect05 /> -->
     <!-- <HtmlPixelPerfect06 /> -->
     <!-- <HtmlPixelPerfect07 /> -->
-    <HtmlPixelPerfect08 />
+    <!-- <HtmlPixelPerfect08 /> -->
+    <HtmlPixelPerfect09 />
   </div>
 </template>
 
