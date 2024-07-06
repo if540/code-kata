@@ -21,6 +21,6 @@ html, body {
 }
 
 #app {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 </style>
