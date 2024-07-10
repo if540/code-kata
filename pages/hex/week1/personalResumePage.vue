@@ -171,8 +171,10 @@ $red-dark: #ae0000
   padding: 64px 0
 .social-link
   // Hack: inlnie devil
-  line-height: 0
+  // line-height: 0 or font-size: 0
   li
-    display: inline-block
     margin: 0 20px
+    display: inline-block
+    // Hack: inlnie devil
+    vertical-align: middle
 </style>
