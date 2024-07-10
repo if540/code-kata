@@ -7,7 +7,7 @@ useSeoMeta({
 <template>
 <header class="container header">
   <h1 class="title-1">VITO</h1>
-  <img class="mx-auto" src="/public/hex/week1_personal_resume/vito.png" alt="VITO 個人黑白照">
+  <img class="mx-auto" src="/public/hex/week1/personalResume/vito.png" alt="VITO 個人黑白照">
   <h2 class="ml-auto title-1 w-half-offset">RESUME</h2>
 </header>
 <section class="vito-dec bg-gray-light">
@@ -72,9 +72,9 @@ useSeoMeta({
 </main>
 <footer class="text-center bg-black footer">
   <ul class="mx-auto social-link">
-    <li><a href="#"><img src="/public/hex/week1_personal_resume/fb.png" alt="vito's fb"></a></li>
-    <li><a href="#"><img src="/public/hex/week1_personal_resume/instagram.png" alt="vito's instagram"></a></li>
-    <li><a href="#"><img src="/public/hex/week1_personal_resume/line.png" alt="vito's line"></a></li>
+    <li><a href="#"><img src="/public/hex/week1/personalResume/fb.png" alt="vito's fb"></a></li>
+    <li><a href="#"><img src="/public/hex/week1/personalResume/instagram.png" alt="vito's instagram"></a></li>
+    <li><a href="#"><img src="/public/hex/week1/personalResume/line.png" alt="vito's line"></a></li>
   </ul>
 </footer>
 </template>
