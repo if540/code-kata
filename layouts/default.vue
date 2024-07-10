@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: 'Code Kata - %s',
+  titleTemplate: "%s - F@E Code Kata",
 })
 </script>
 
