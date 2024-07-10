@@ -1,0 +1,1 @@
+import{u as e}from"./CZFg-_ih.js";import{d as t,v as n,t as o}from"./spp-veN8.js";import"./CzUNa3xV.js";const i=t({__name:"index",setup(a){return e({title:"Index Page"}),(r,s)=>(o(),n("div",null," Page: Index "))}});export{i as default};
