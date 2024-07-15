@@ -1,1 +1,0 @@
-import{u as e}from"./BMUSN_oP.js";import{f as t,o,c as n}from"./vex894le.js";import"./CjBInFqp.js";const i=t({__name:"index",setup(a){return e({title:"Index Page"}),(r,s)=>(o(),n("div",null," Page: Index "))}});export{i as default};
