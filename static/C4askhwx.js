@@ -1,1 +1,0 @@
-import{u as t}from"./CzUNa3xV.js";import{d as a,v as o,G as s,t as r}from"./spp-veN8.js";const p=a({__name:"default",setup(l){return t({titleTemplate:"%s - F@E Code Kata"}),(e,n)=>(r(),o("div",null,[s(e.$slots,"default")]))}});export{p as default};
