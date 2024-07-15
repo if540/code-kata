@@ -1,0 +1,1 @@
+import{u as t}from"./CjBInFqp.js";import{f as a,o,c as s,V as r}from"./vex894le.js";const u=a({__name:"default",setup(l){return t({titleTemplate:"%s - F@E Code Kata"}),(e,n)=>(o(),s("div",null,[r(e.$slots,"default")]))}});export{u as default};
