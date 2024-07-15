@@ -1,0 +1,1 @@
+import{u as s}from"./DZ53iH5B.js";import{k as u}from"./BH3gwDA0.js";function i(e,a){const{title:r,titleTemplate:o,...m}=e;return s({title:r,titleTemplate:o,_flatMeta:m},{...a,transform(t){const n=u({...t._flatMeta});return delete t._flatMeta,{...t,meta:n}}})}export{i as u};
