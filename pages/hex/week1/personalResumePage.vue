@@ -71,7 +71,7 @@ useSeoMeta({
   </ul>
 </main>
 <footer class="bg-black footer">
-  <ul class="social-link text-center">
+  <ul class="text-center social-link">
     <li><a href="#"><img src="/public/hex/week1/personalResume/fb.png" alt="vito's fb"></a></li>
     <li><a href="#"><img src="/public/hex/week1/personalResume/instagram.png" alt="vito's instagram"></a></li>
     <li><a href="#"><img src="/public/hex/week1/personalResume/line.png" alt="vito's line"></a></li>
@@ -79,7 +79,7 @@ useSeoMeta({
 </footer>
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap')
 
 // -------------------------------------
