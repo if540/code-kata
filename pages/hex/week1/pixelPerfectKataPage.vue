@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: "hex"
+})
 useSeoMeta({
   title: "Pixel Perfect Kata"
 })

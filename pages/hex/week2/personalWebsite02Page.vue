@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: "hex"
+})
 useSeoMeta({
   title: "第二週 - 個人網站 - Round 2"
 })
@@ -6,114 +9,118 @@ useSeoMeta({
 
 <template>
 <div class="personalWebsitePage">
-  <!-- nav -->
-  <nav class="nav text-white bg-black">
-    <div class="container py-40">
-      <ul class="navList flex items-center justify-between">
-        <li>WILLIAM LEE</li>
-        <li>BASED IN TAIWAN</li>
-        <li>CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
-        <li><a href="#">CONTACT ME</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- banner -->
-  <div class="banner text-white bg-black">
-    <div class="container flex items-center gap-6">
-      <div class="photo w-50-offset">
-        <img src="/public/hex//week2/personalWebsitePage/people.png" alt="William's 黑白形像照">
-      </div>
-      <div class="slogan flex flex-col w-50-offset">
-        <h1 class="fs-0">Hi <br />I’m a front-end developer <span class="block text-right h1 text-danger">William</span></h1>
-        <a href="#" class="button self-end" aria-label="聯絡 William 信箱">contact me <img src="/public/hex/week2/personalWebsitePage/arrow_outward.png" alt="" aria-hidden="true"></a>
-      </div>
-    </div>
-  </div>
-  <!-- introduction -->
-  <div class="introduction text-white">
-    <div class="container py-160 flex gap-6">
-      <div class="intro col-5 flex flex-col">
-        <h2 class="fs-0">Introduction</h2>
-        <p class="fs-2 mt-36">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
-        <div class="mt-32 flex items-start gap-4">
-          <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
-          <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
-          <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
-        </div>
-      </div>
-      <div class="introImg col-7 flex items-start">
-        <ul class="flex gap-6">
-          <li><img src="/public/hex/week2/personalWebsitePage/sparkle.png" alt="" aria-hidden="true"></li>
-          <li><img src="/public/hex/week2/personalWebsitePage/photographer.png" alt="William's 手持照相機工作照"></li>
-          <li><img src="/public/hex/week2/personalWebsitePage/people-2.png" alt="William's 正面單手遮臉酷照"></li>
+  <header>
+    <!-- nav -->
+    <nav class="text-white bg-black nav">
+      <div class="container py-40">
+        <ul class="flex items-center justify-between navList">
+          <li>WILLIAM LEE</li>
+          <li>BASED IN TAIWAN</li>
+          <li>CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
+          <li><a href="#">CONTACT ME</a></li>
         </ul>
       </div>
-    </div>
-  </div>
-  <!-- about -->
-  <div class="about text-black">
-    <div class="container flex flex-row-reverse items-center justify-between py-160">
-      <div class="aboutText col-5">
-        <h2  class="fs-0">About Me</h2>
-        <p class="fs-2 mt-36">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
-      </div>
-      <ol class="aboutList flex flex-wrap col-6 gap-6">
-        <li class="fs-3 flex flex-col gap-1">01
-          <h3>Attention to Detail</h3>
-          <p class="fs-normal">Meticulous code analysis and optimization.</p>
-        </li>
-        <li class="fs-3 flex flex-col gap-1">02
-          <h3>Adaptability</h3>
-          <p class="fs-normal">Swift learning of new technologies.</p>
-        </li>
-        <li class="fs-3 flex flex-col gap-1">03
-          <h3>Problem Solver</h3>
-          <p class="fs-normal">Identifying and resolving issues.</p>
-        </li>
-        <li class="fs-3 flex flex-col gap-1">04
-          <h3>Team Player</h3>
-          <p class="fs-normal">Collaborates and shares ideas.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <!-- contact -->
-  <div class="contact bg-black">
-    <div class="container flex justify-between items-center py-96">
-      <h2 class="contact-title flex items-center text-white fs-0 gap-4">CONTACT ME <img src="/public/hex/week2/personalWebsitePage/trending_flat_black_24.png" alt="" aria-hidden="true"></h2>
-      <ul class="social-link flex items-center col-5 gap-5">
-        <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/discord.png" alt="William's Discord"></a></li>
-        <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/instagram.png" alt="William's IG"></a></li>
-        <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/message.png" alt="William's Message"></a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- projects -->
-  <div class="projects">
-    <div class="container flex flex-col gap-4 py-160">
-      <h2 class="fs-0 col-7 ml-auto">My Projects</h2>
-      <div class="flex gap-6">
-        <div class="projL col-4">
-          <img src="/public/hex/week2/personalWebsitePage/Rectangle 10.png" alt="William's Project1">
+    </nav>
+    <!-- banner -->
+    <div class="text-white bg-black banner">
+      <div class="container flex items-center gap-6">
+        <div class="photo w-50-offset">
+          <img src="/public/hex//week2/personalWebsitePage/people.png" alt="William's 黑白形像照">
         </div>
-        <div class="projR flex flex-col gap-7 col-8">
-          <div class="flex gap-6">
-            <img class="self-start" src="/public/hex/week2/personalWebsitePage/Rectangle 15.png" alt="William's Project2">
-            <div class="dec-info flex flex-col justify-between items-start">
-              <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-              <a href="#" class="button button-dark" aria-label="看更多 William's Project">SEE MORE <img src="/public/hex/week2/personalWebsitePage/arrow_outward-white.png" alt="" aria-hidden="true"></a>
+        <div class="flex flex-col slogan w-50-offset">
+          <h1 class="fs-0">Hi <br />I’m a front-end developer <span class="block text-right h1 text-danger">William</span></h1>
+          <a href="#" class="self-end button" aria-label="聯絡 William 信箱">contact me <img src="/public/hex/week2/personalWebsitePage/arrow_outward.png" alt="" aria-hidden="true"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- introduction -->
+    <section class="text-white introduction">
+      <div class="container flex gap-6 py-160">
+        <div class="flex flex-col intro col-5">
+          <h2 class="fs-0">Introduction</h2>
+          <p class="fs-2 mt-36">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+          <div class="flex items-start gap-4 mt-32">
+            <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
+            <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
+            <img src="/public/hex/week2/personalWebsitePage/sparkle-sm.png" alt="" aria-hidden="true">
+          </div>
+        </div>
+        <div class="flex items-start introImg col-7">
+          <ul class="flex gap-6">
+            <li><img src="/public/hex/week2/personalWebsitePage/sparkle.png" alt="" aria-hidden="true"></li>
+            <li><img src="/public/hex/week2/personalWebsitePage/photographer.png" alt="William's 手持照相機工作照"></li>
+            <li><img src="/public/hex/week2/personalWebsitePage/people-2.png" alt="William's 正面單手遮臉酷照"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="text-black about">
+      <div class="container flex flex-row-reverse items-center justify-between py-160">
+        <div class="aboutText col-5">
+          <h2  class="fs-0">About Me</h2>
+          <p class="fs-2 mt-36">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+        </div>
+        <ol class="flex flex-wrap gap-6 aboutList col-6">
+          <li class="flex flex-col gap-1 fs-3">01
+            <h3>Attention to Detail</h3>
+            <p class="fs-normal">Meticulous code analysis and optimization.</p>
+          </li>
+          <li class="flex flex-col gap-1 fs-3">02
+            <h3>Adaptability</h3>
+            <p class="fs-normal">Swift learning of new technologies.</p>
+          </li>
+          <li class="flex flex-col gap-1 fs-3">03
+            <h3>Problem Solver</h3>
+            <p class="fs-normal">Identifying and resolving issues.</p>
+          </li>
+          <li class="flex flex-col gap-1 fs-3">04
+            <h3>Team Player</h3>
+            <p class="fs-normal">Collaborates and shares ideas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="bg-black contact">
+      <div class="container flex items-center justify-between py-96">
+        <h2 class="flex items-center gap-4 text-white contact-title fs-0">CONTACT ME <img src="/public/hex/week2/personalWebsitePage/trending_flat_black_24.png" alt="" aria-hidden="true"></h2>
+        <ul class="flex items-center gap-5 social-link col-5">
+          <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/discord.png" alt="William's Discord"></a></li>
+          <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/instagram.png" alt="William's IG"></a></li>
+          <li><a href="#"><img src="/public/hex/week2/personalWebsitePage/message.png" alt="William's Message"></a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- projects -->
+    <section class="projects">
+      <div class="container flex flex-col gap-4 py-160">
+        <h2 class="ml-auto fs-0 col-7">My Projects</h2>
+        <div class="flex gap-6">
+          <div class="projL col-4">
+            <img src="/public/hex/week2/personalWebsitePage/Rectangle 10.png" alt="William's Project1">
+          </div>
+          <div class="flex flex-col projR gap-7 col-8">
+            <div class="flex gap-6">
+              <img class="self-start" src="/public/hex/week2/personalWebsitePage/Rectangle 15.png" alt="William's Project2">
+              <div class="flex flex-col items-start justify-between dec-info">
+                <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                <a href="#" class="button button-dark" aria-label="看更多 William's Project">SEE MORE <img src="/public/hex/week2/personalWebsitePage/arrow_outward-white.png" alt="" aria-hidden="true"></a>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <img src="/public/hex/week2/personalWebsitePage/Rectangle 14.png" alt="William's Project3">
+              <img src="/public/hex/week2/personalWebsitePage/Rectangle 29.png" alt="William's Project4">
             </div>
           </div>
-          <div class="flex items-start gap-6">
-            <img src="/public/hex/week2/personalWebsitePage/Rectangle 14.png" alt="William's Project3">
-            <img src="/public/hex/week2/personalWebsitePage/Rectangle 29.png" alt="William's Project4">
-          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
   <!-- footer -->
-  <footer class="footer text-center py-40 bg-black text-white">
+  <footer class="py-40 text-center text-white bg-black footer">
     all rights reserved @hexschool2023
   </footer>
 </div>

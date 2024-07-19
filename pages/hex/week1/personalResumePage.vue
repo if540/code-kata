@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: "hex"
+})
 useSeoMeta({
   title: "第一週 - 個人履歷"
 })
