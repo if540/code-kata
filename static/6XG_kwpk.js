@@ -1,0 +1,1 @@
+import{_ as o}from"./DlAUqK2U.js";import{c as t,o as a,a as e}from"./DlbFfFYN.js";const s={},c=e("h1",null,"Dashboard Page",-1),r=e("p",null,"你不應該看的見!!! 因為我有一支全域路由中介程式 `/middleware/auth.global.ts`，會將你導回 `/`。。",-1),n=[c,r];function _(d,l){return a(),t("div",null,n)}const f=o(s,[["render",_]]);export{f as default};
