@@ -1,28 +1,18 @@
 <script setup lang="ts">
 const route = useRoute();
+
 useHead({
-  meta: [{ property: 'og:title', content: `App Name - ${route.meta.title}` }],
-  link: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com'
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
-      crossorigin: ''
-    }
-  ]
+  meta: [{ property: 'og:title', content: `Article - ${route.meta.title}` }]
 })
 </script>
 
 <template>
   <div>
     <header class="text-center header">
-      <h1 class="text-3xl font-bold">MY WEBSITE</h1>
+      <h1 class="text-3xl font-bold">文章列表</h1>
     </header>
     <slot />
-    <footer class="container text-xs font-bold text-center text-gray-500 uppercase">copyright kk.</footer>
+    <footer class="container py-4 text-xs font-bold text-center text-white uppercase bg-gray-500">copyright kk.</footer>
   </div>
 </template>
 
