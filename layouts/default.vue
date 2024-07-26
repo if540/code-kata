@@ -14,35 +14,18 @@ useHead({
     }
   ]
 })
+const { data } = await useFetch('/api/data')
 </script>
 
 <template>
   <div>
-    <header class="text-center header">
-      <h1 class="text-3xl font-bold">MY WEBSITE</h1>
+    <header class="container py-10 m-auto text-center">
+      <h1 class="text-3xl font-bold">
+        <NuxtLink to="/">MY WEBSITE - {{ data?.data }}</NuxtLink>
+      </h1>
+      <Nav />
     </header>
     <slot />
-    <footer class="container text-xs font-bold text-center text-gray-500 uppercase">copyright kk.</footer>
+    <Footer />
   </div>
 </template>
-
-<style lang="sass">
-// -------------------------------------
-//   Layout
-// -------------------------------------
-.container
-  max-width: 960px
-  margin: 0 auto
-// -------------------------------------
-//   Page
-// -------------------------------------
-.header
-  padding: 40px 0
-// -------------------------------------
-//   Components
-// -------------------------------------
-// -------------------------------------
-//   Helper
-// -------------------------------------
-// ----- font-size ----- //
-</style>

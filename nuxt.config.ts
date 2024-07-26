@@ -12,7 +12,6 @@ export default defineNuxtConfig({
   css: [
     "~/assets/reset.css"
   ],
-
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
@@ -20,17 +19,19 @@ export default defineNuxtConfig({
   ],
   ssr: false,
   content: {
-    documentDriven: true,
-    experimental: {
-      clientDB: true
-    },
     api: {
       baseURL: '/api/_content'
+    },
+    documentDriven: true,
+    highlight: {
+      theme: 'github-light'
+    },
+    navigation: {
+      fields: ['author', 'publishedAt']
+    },
+    experimental: {
+      clientDB: true
     }
-  },
-
-  routeRules: {
-    '/**': { prerender: true },
   },
 })  
   
