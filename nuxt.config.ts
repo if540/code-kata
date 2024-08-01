@@ -12,11 +12,7 @@ export default defineNuxtConfig({
   css: [
     "~/assets/reset.css"
   ],
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxt/content",
-    "@nuxt/image"
-  ],
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   ssr: false,
   content: {
     api: {
