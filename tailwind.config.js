@@ -15,6 +15,28 @@ module.exports = {
       },
     },
     extend: {
+      lineHeight: {
+        DEFAULT: '1.5'
+      },
+      fontFamily: {
+        notosanstc: ['Noto Sans TC', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        xs: ['0.75rem', '1.5'],
+        sm: ['0.875rem', '1.5'],
+        base: ['1rem', '1.5'],
+        lg: ['1.125rem', '1.5'],
+        xl: ['1.25rem', '1.5'],
+        '2xl': ['1.5rem', '1.5'],
+        '3xl': ['1.875rem', '1.5'],
+        '4xl': ['2.25rem', '1.5'],
+        '5xl': ['3rem', '1.5'],
+        '6xl': ['3.75rem', '1.5'],
+        '7xl': ['4.5rem', '1.5'],
+        '8xl': ['6rem', '1.5'],
+        '9xl': ['8rem', '1.5'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -82,5 +104,16 @@ module.exports = {
       },
     },
   },
-  plugins: [animate],
+  variants: {
+    extend: {
+      backgroundColor: ['active', 'not'],
+    },
+  },
+  plugins: [
+    animate, 
+    function ({ addVariant }) {
+      addVariant('active', '&.active');
+      addVariant('not-active', '&:not(.active)');
+    }
+  ],
 }

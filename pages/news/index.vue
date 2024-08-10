@@ -53,45 +53,27 @@ const updateCategories = function (val: string) {
   <!-- 最新消息分類過濾選單 -->
   <nav>
     <ul class="flex justify-center gap-1">
-      <li
-        class="border border-solid rounded-lg"
-        :class="{ 'border-teal-500 text-teal-500': link == categories }"
-        v-for="link in categoriesType"
-      >
+      <li class="border border-solid rounded-lg" :class="{ 'border-teal-500 text-teal-500': link == categories }"
+        v-for="link in categoriesType">
         <a href="#" class="block p-2" @click="updateCategories(link)">{{
           t[link]
-        }}</a>
+          }}</a>
       </li>
     </ul>
   </nav>
 
   <!-- 最新消息列表 -->
-  <ContentQuery
-    path="news"
-    :where="whereConditions"
-    :sort="{ date: -1 }"
-    :skip="size * (page - 1)"
-    :limit="size"
-  >
+  <ContentQuery path="news" :where="whereConditions" :sort="{ date: -1 }" :skip="size * (page - 1)" :limit="size">
     <template #default="{ data: list }">
       <ul>
-        <li
-          v-for="item in list"
-          class="flex items-center gap-2 p-4 mt-2 border border-solid rounded-lg"
-        >
-          <span
-            class="p-1 text-xs text-center border border-solid rounded-md min-w-16"
-            @click="updateCategories(item.categories)"
-            >{{ item.categories }}</span
-          >
+        <li v-for="item in list" class="flex items-center gap-2 p-4 mt-2 border border-solid rounded-lg">
+          <span class="p-1 text-xs text-center border border-solid rounded-md min-w-16"
+            @click="updateCategories(item.categories)">{{ item.categories }}</span>
           <NuxtLink :to="item._path" class="flex-1">
             <h2>{{ item.title }}</h2>
           </NuxtLink>
-          <time
-            class="block ml-auto"
-            :datetime="jsonStrTotoLocaleDateString(item.date)"
-            >{{ jsonStrTotoLocaleDateString(item.date) }}</time
-          >
+          <time class="block ml-auto" :datetime="jsonStrTotoLocaleDateString(item.date)">{{
+            jsonStrTotoLocaleDateString(item.date) }}</time>
         </li>
       </ul>
     </template>

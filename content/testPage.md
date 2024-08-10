@@ -1,8 +1,8 @@
 ---
-title: Hello World
+title: Markdown 測試頁面
 description: Welcome to my blog
+tags: ["test", "Markdown"]
 draft: false
-catalog: "web"
 ---
 
 # Hello World H1 title
