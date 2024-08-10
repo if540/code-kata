@@ -1,0 +1,7 @@
+# navigation.categories: ['all', 'news', 'system']
+navigation:
+  title: "最新消息"
+  categories:
+    ALL: 'all'
+    NEWS: 'news'
+    SYSTEM: 'system'

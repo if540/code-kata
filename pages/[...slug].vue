@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+const { page } = useContent()
+console.log('page', page.value)
+</script>
+
 <template>
   <main>
     <!-- ContentDoc returns content for `$route.path` by default or you can pass a `path` prop -->
@@ -14,6 +19,6 @@
       <template #empty>
         <h1>Document is empty</h1>
       </template>
-    </ContentDoc> 
+    </ContentDoc>
   </main>
 </template>

@@ -1,48 +1,17 @@
 <script setup lang="ts">
-const route = useRoute();
-useHead({
-  meta: [{ property: 'og:title', content: `App Name - ${route.meta.title}` }],
-  link: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com'
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
-      crossorigin: ''
-    }
-  ]
-})
+// const { data } = await useFetch("/api/data");
+// {{ data?.data }}
 </script>
 
 <template>
-  <div>
-    <header class="text-center header">
-      <h1 class="text-3xl font-bold">MY WEBSITE</h1>
+  <div class="container m-auto">
+    <header class="container py-10 m-auto text-center">
+      <h1 class="text-3xl font-bold">
+        <NuxtLink to="/">MY WEBSITE</NuxtLink>
+      </h1>
+      <Nav />
     </header>
     <slot />
-    <footer class="container text-xs font-bold text-center text-gray-500 uppercase">copyright kk.</footer>
+    <Footer />
   </div>
 </template>
-
-<style lang="sass">
-// -------------------------------------
-//   Layout
-// -------------------------------------
-.container
-  max-width: 960px
-  margin: 0 auto
-// -------------------------------------
-//   Page
-// -------------------------------------
-.header
-  padding: 40px 0
-// -------------------------------------
-//   Components
-// -------------------------------------
-// -------------------------------------
-//   Helper
-// -------------------------------------
-// ----- font-size ----- //
-</style>
